@@ -12,6 +12,7 @@ for line in fileinput.input(['/home/jiawen/data/Homo_sapiens.GRCh37.75.gtf']):
     if gene_name_matches:
        if gene_id_matches:
           Lookup[gene_name_matches[0]] = gene_id_matches[0]
+print "The variants within the gene" + key + Lookup[key] +  "are: "
          # print "key is " + gene_name_matches[0] + "val is " + gene_id_matches[0]
          #print "gene", key, Lookup[key]
 #alternative method but does not work#
